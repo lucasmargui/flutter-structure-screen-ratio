@@ -41,20 +41,19 @@ WidgetsBinding.instance.addPostFrameCallback(...) é utilizado para garantir que
 
 <img src="https://github.com/lucasmargui/Flutter_Estrutura_Proporcao/assets/157809964/dd7059ef-7615-424c-ab1f-6dc487aa6e32" style="width:80%">
 
-Com base no contexto da Tela de Loading ele executa a função init e armazena as dimensões da tela atual através do MediaQuery
+Com base no contexto da Tela de Loading, ele executa a função init e armazena as dimensões da tela atual através do MediaQuery.
 
 <img src="https://github.com/lucasmargui/Flutter_Estrutura_Proporcao/assets/157809964/9673b718-66cc-44e6-8d2b-8a7c94080e73" style="width:80%">
 
 ### Tela Home
-Como Sizes é uma classe singleton podemos acessar suas propriedades e criaremos uma extensão adicionando uma funcionalidade a Classe nativa Num do dart e acessando as propriedades da classe Sizes que foram alteradas quando a Tela de Loading foi carregada, fazendo o calculo de proporção do posicionamento
+Como Sizes é uma classe singleton, podemos acessar suas propriedades e criaremos uma extensão adicionando uma funcionalidade à Classe nativa Num do Dart e acessando as propriedades da classe Sizes que foram alteradas quando a Tela de Loading foi carregada, fazendo o cálculo de proporção do posicionamento.
 
 - this * Sizes._instance._width: tamanho do device que foi passando através do init quando a tela de loading foi carregada
 - Sizes._designSize.height: tamanho pré definido
 
   <img src="https://github.com/lucasmargui/Flutter_Estrutura_Proporcao/assets/157809964/734bd656-875f-474e-847a-b16f6dff4dbf" style="width:80%">
 
-
-Dessa forma podemos accessar a funcionalidade adicionada na classe num do dart através do extensions e utilizar a proporção calculada entre diferentes tamanhos de tela  
+Dessa forma, podemos acessar a funcionalidade adicionada na classe num do Dart através do extensions e utilizar a proporção calculada entre diferentes tamanhos de tela.
 
   <img src="https://github.com/lucasmargui/Flutter_Estrutura_Proporcao/assets/157809964/39908356-86e5-47b8-ad1e-8e27f73fdc7f" style="width:80%">
 
